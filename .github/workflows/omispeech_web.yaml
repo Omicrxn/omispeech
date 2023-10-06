@@ -1,0 +1,29 @@
+name: omispeech_web
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+on:
+  pull_request:
+    paths:
+      - ".github/workflows/omispeech_web.yaml"
+      - "omispeech_web/**"
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/omispeech_web.yaml"
+      - "omispeech_web/**"
+
+jobs:
+  build:
+    uses: VeryGoodOpenSource/very_good_workflows/.github/workflows/flutter_package.yml@v1
+    with:
+      flutter_channel: stable
+      flutter_version: 3.13.2
+      working_directory: omispeech_web
+
+  pana:
+    uses: VeryGoodOpenSource/very_good_workflows/.github/workflows/pana.yml@v1
+

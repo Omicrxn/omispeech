@@ -1,0 +1,28 @@
+name: omispeech_android
+description: Android implementation of the omispeech plugin
+version: 0.1.0+1
+
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+flutter:
+  plugin:
+    implements: omispeech
+    platforms:
+      android:
+        package: com.example.verygoodcore
+        pluginClass: OmispeechPlugin
+        dartPluginClass: OmispeechAndroid
+
+dependencies:
+  flutter:
+    sdk: flutter
+  omispeech_platform_interface:
+    path: ../omispeech_platform_interface
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  plugin_platform_interface: ^2.0.0
+  very_good_analysis: ^5.1.0
