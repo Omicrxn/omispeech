@@ -26,19 +26,33 @@ dependencies:
   flutter:
     sdk: flutter
   omispeech_android:
-    path: ../omispeech_android
+    git:
+      url: https://github.com/Omicrxn/omispeech.git
+      path: omispeech_android
   omispeech_ios:
-    path: ../omispeech_ios
+    git:
+      url: https://github.com/Omicrxn/omispeech.git
+      path: omispeech_ios
   omispeech_linux:
-    path: ../omispeech_linux
+    git:
+      url: https://github.com/Omicrxn/omispeech.git
+      path: omispeech_linux
   omispeech_macos:
-    path: ../omispeech_macos
+    git:
+      url: https://github.com/Omicrxn/omispeech.git
+      path: omispeech_macos
   omispeech_platform_interface:
-    path: ../omispeech_platform_interface
+    git:
+      url: https://github.com/Omicrxn/omispeech.git
+      path: omispeech_platform_interface
   omispeech_web:
-    path: ../omispeech_web
+    git:
+      url: https://github.com/Omicrxn/omispeech.git
+      path: omispeech_web
   omispeech_windows:
-    path: ../omispeech_windows
+    git:
+      url: https://github.com/Omicrxn/omispeech.git
+      path: omispeech_windows
 
 dev_dependencies:
   flutter_test:
